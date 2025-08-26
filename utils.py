@@ -1,7 +1,7 @@
 import numpy as np
 
 from constants import Cv
-import fdm1 as fdm
+import fdm
 
 def vel_sanity(u, w, dx, dz, dt, name=""):
     assert np.isfinite(u).all() and np.isfinite(w).all(), f"{name}: NaN/Inf present"
