@@ -7,8 +7,9 @@ from scipy.integrate import cumulative_trapezoid
 import microphysics
 import utils
 from constants import Cond_rt, Cv, Evap_rt, Lv, Prec_rt, Rd, Rv, g, kappa
-from march import RungeKutta3
-from poisson1 import solve_poisson_fft
+from march import RungeKutta3, rk3_projection_step
+from rhs import rhs_internal_energy, rhs_moisture
+from utils import check_fields, vel_sanity
 
 debug_stats = False
 filename = "sim_bubble_10"
