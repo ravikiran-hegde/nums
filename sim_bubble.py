@@ -4,7 +4,6 @@ import numpy as np
 import xarray as xr
 from scipy.integrate import cumulative_trapezoid
 
-import fdm1 as fdm
 import microphysics
 import utils
 from constants import Cond_rt, Cv, Evap_rt, Lv, Prec_rt, Rd, Rv, g, kappa
